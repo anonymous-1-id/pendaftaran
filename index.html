@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Calon OSIS</title>
+    <link rel="icon" href="https://i.ibb.co.com/B5Zwc38m/1000061688-removebg-preview.png" type="image/x-icon">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.box label {
+    display: block;
+    margin-bottom: 10px;
+}
+.box input[type="text"], .box select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+        .box input[type="tel"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .box input[type="tel"]:invalid {
+            border: 1px solid red;
+        }
+        .box select {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .tombol {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tombol:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.ibb.co.com/B5Zwc38m/1000061688-removebg-preview.png" style="position: absolute; top: 50px; left: 218px; width: 30px; height: 30px;">
+    <img src="https://i.ibb.co.com/9myGZQD4/Whats-App-Image-2024-11-15-at-15-52-03-a4e45878-removebg-preview.png" style="position: absolute; top: 50px; right:218px; width: 30px; height: 30px;">
+    <div class="container">
+        <h3 style="text-align: center;">Selamat Datang di Website Pendaftaran Calon pengurus OSIS</h3>
+        <form id="form-pendaftaran">
+            <div class="box">
+                <label for="nama-lengkap">1. Nama Lengkap</label>
+                <input type="text" id="nama-lengkap" name="nama-lengkap" required>
+            </div>
+            <div class="box">
+                <label for="kelas">2. Kelas</label>
+                <select id="kelas" name="kelas" required>
+                    <option value="">Pilih Kelas</option>
+                    <option value="X Kuliner">X Kuliner</option>
+                    <option value="X AKL 1">X AKL 1</option>
+                    <option value="X AKL 2">X AKL 2</option>
+                    <option value="X AKL 3">X AKL 3/PBS</option>
+                    <option value="X Perhotelan">X Perhotelan</option>
+                    <option value="X MPLB 1">X MPLB 1</option>
+                    <option value="X MPLB 2">X MPLB 2</option>
+                    <option value="X Pemasaran 1">X Pemasaran 1</option>
+                    <option value="X Pemasaran 2">X Pemasaran 2</option>
+                    <option value="X TJKT 1">X TJKT 1</option>
+                    <option value="X TJKT 2">X TJKT 2</option>
+                </select>
+            </div>
+            <div class="box">
+                <label for="alamat-rumah">3. Alamat Rumah</label>
+                <input type="text" id="alamat-rumah" name="alamat-rumah" required>
+            </div>
+            <div class="box">
+                <label for="nomor-telepon">4. Nomor Telepon</label>
+                <input type="tel" id="nomor-telepon" name="nomor-telepon" pattern="[0-9]{10,13}" required>
+            </div>
+            <div class="box">
+                <label for="nama-orangtua">5. Nama OrangTua</label>
+                <input type="text" id="nama-orangtua" name="nama-orangtua" required>
+            </div>
+            <div class="box">
+                <label for="nomor-orangtua">6. Nomor OrangTua</label>
+                <input type="tel" id="nomor-orangtua" name="nomor-orangtua" required>
+            </div>
+            <div class="box">
+                <label for="asal-sekolah">7. Asal Sekolah (SMP)</label>
+                <input type="text" id="asal-sekolah" name="asal-sekolah" required>
+            </div>
+            <div class="box">
+                <label for="bakat">8. Bakat</label>
+                <input type="text" id="bakat" name="bakat" required>
+            </div>
+            <div class="box">
+                <label for="hobi">9. Hobi</label>
+                <input type="text" id="hobi" name="hobi" required>
+            </div>
+            <div class="box">
+                <label for="visi">10. Visi</label>
+                <input type="text" id="visi" name="visi" required>
+            </div>
+            <div class="box">
+                <label for="misi">11. Misi</label>
+                <input type="text" id="misi" name="misi" required>
+            </div>
+            <div class="box">
+                <label for="motivasi">12. Motivasi</label>
+                <input type="text" id="motivasi" name="motivasi" required>
+            </div>
+            <div class="box">
+                <label for="organisasi-yang-pernah-di-ikuti">13. Organisasi yang Pernah di Ikuti dan Jabatannya</label>
+                <input type="text" id="organisasi-yang-pernah-di-ikuti" name="organisasi-yang-pernah-di-ikuti" required>
+            </div>
+            <div class="box">
+                <label for="riwayat-penyakit">14. Riwayat Penyakit</label>
+                <input type="text" id="riwayat-penyakit" name="riwayat-penyakit" required>
+            </div>
+            <button class="tombol" type="submit">Kirim Formulir</button>
+        </form>
+    </div>
+
+    <script>
+        const formPendaftaran = document.getElementById('form-pendaftaran');
+        formPendaftaran.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const data = new FormData(formPendaftaran);
+            const url = 'https://api.whatsapp.com/send?phone=6285786335575&text=';
+            const text = `Pendaftaran OSIS%0A%0A${
+            data.get('nama-lengkap')}%0A${
+            data.get('kelas')}%0A${
+            data.get('alamat-rumah')}%0A${
+            data.get('nomor-telepon')}%0A${
+            data.get('nama-orangtua')}%0A${
+            data.get('nomor-orangtua')}%0A${
+            data.get('asal-sekolah')}%0A${
+            data.get('bakat')}%0A${
+            data.get('hobi')}%0A${
+            data.get('visi')}%0A${
+            data.get('misi')}%0A${
+            data.get('motivasi')}%0A${
+            data.get('organisasi-yang-pernah-di-ikuti')}%0A${
+            data.get('riwayat-penyakit')}%0A%0A`;
+            window.open(url + text, '_blank');
+        });
+        setTimeout(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = "Kirim Formulir";
+            }, 3000);
+        </script>        
+</body>
+</html>
